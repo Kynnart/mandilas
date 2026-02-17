@@ -357,7 +357,6 @@ body {
   color: var(--accent);
 }
 
-/* Feature Container Grid */
 .feature-container {
   max-width: 1200px;
   padding-right: 30px;
@@ -374,7 +373,6 @@ body {
   grid-template-columns: 44% 28% 28%;
 }
 
-/* Card Base Styles */
 .card-small,
 .card-large {
   background: white;
@@ -393,7 +391,6 @@ body {
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-/* Pill Badge */
 .card-small .pill,
 .card-large .pill {
   display: inline-flex;
@@ -414,7 +411,6 @@ body {
   object-fit: contain;
 }
 
-/* Card Typography */
 .card-small h3,
 .card-large h3 {
   font-size: 1.2rem;
@@ -433,7 +429,6 @@ body {
   line-height: 1.6;
 }
 
-/* Card Color Themes */
 .card-pro .pill {
   background: #fef2f2;
   color: #991b1b;
@@ -487,7 +482,6 @@ body {
   gap: 20px;
 }
 
-/* Step Cards */
 .how-it-works-grid .feature-card-1,
 .how-it-works-grid .feature-card1,
 .how-it-works-grid .feature-card2 {
@@ -508,7 +502,6 @@ body {
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-/* Step Card Hover Colors */
 .how-it-works-grid .feature-card-1:hover {
   background-color: #eff6ff;
 }
@@ -521,7 +514,6 @@ body {
   background-color: #f0fdf4;
 }
 
-/* Step Pills */
 .how-it-works-grid .pill {
   display: inline-flex;
   align-items: center;
@@ -555,7 +547,6 @@ body {
   color: #16a34a;
 }
 
-/* Step Card Typography */
 .how-it-works-grid .feature-card-1 h3,
 .how-it-works-grid .feature-card1 h3,
 .how-it-works-grid .feature-card2 h3 {
@@ -642,7 +633,6 @@ body {
   border-radius: 20px;
 }
 
-/* Pricing Plan Colors */
 .starter .plan-label {
   color: var(--starter-color);
   border-color: var(--starter-color);
@@ -673,7 +663,6 @@ body {
   border-color: var(--teams-color);
 }
 
-/* Price Area */
 .price {
   font-size: 2.5rem;
   color: var(--text-main);
@@ -686,7 +675,6 @@ body {
   font-weight: 400;
 }
 
-/* Features List */
 .features-list {
   list-style: none;
   padding: 0;
@@ -980,7 +968,6 @@ details {
    13. UTILITIES
    ======================================== */
 
-/* Scroll to Top Button */
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -1005,7 +992,6 @@ details {
   transform: translateY(-5px);
 }
 
-/* Theme Toggle */
 .theme-toggle {
   background: transparent;
   border: 1px solid var(--border-gray);
@@ -1024,7 +1010,6 @@ details {
   transform: scale(1.1);
 }
 
-/* Logo Switching */
 .logo-triggar,
 .footer-logo-wrap {
   position: relative;
@@ -1054,9 +1039,6 @@ details {
 
 .footer-logo-wrap {
   display: inline-flex !important;
-  position: relative;
-  width: 150px;
-  aspect-ratio: 4 / 1;
 }
 
 .footer-logo {
@@ -1109,6 +1091,18 @@ body.dark-theme .logo-dark {
   opacity: 1;
 }
 
+/* Dark Mode - Scroll Button */
+body.dark-theme #scrollTopBtn {
+  background-color: var(--accent) !important;
+  color: #0f172a !important;
+}
+
+body.dark-theme #scrollTopBtn:hover {
+  background-color: #ffffff !important;
+  color: var(--accent) !important;
+  transform: translateY(-5px);
+}
+
 /* Dark Mode - Sections Background */
 body.dark-theme,
 body.dark-theme .navbar,
@@ -1133,6 +1127,17 @@ body.dark-theme summary {
   color: var(--text-main) !important;
 }
 
+/* Dark Mode - Footer Links */
+body.dark-theme .footer-links a,
+body.dark-theme .subscribe-label,
+body.dark-theme .tagline {
+  color: #e2e8f0 !important;
+}
+
+body.dark-theme .footer-links a:hover {
+  color: var(--accent) !important;
+}
+
 /* Dark Mode - 6 Feature Cards */
 body.dark-theme .card-small,
 body.dark-theme .card-large {
@@ -1142,12 +1147,12 @@ body.dark-theme .card-large {
 
 body.dark-theme .card-small h3,
 body.dark-theme .card-large h3 {
-  color: #ffffff !important;
+  color: #f8fafc !important;
 }
 
 body.dark-theme .card-small p,
 body.dark-theme .card-large p {
-  color: var(--text-muted) !important;
+  color: #cbd5e1 !important;
 }
 
 body.dark-theme .card-pro:hover {
@@ -1173,13 +1178,13 @@ body.dark-theme .how-it-works-grid .feature-card2 {
 body.dark-theme .how-it-works-grid .feature-card-1 h3,
 body.dark-theme .how-it-works-grid .feature-card1 h3,
 body.dark-theme .how-it-works-grid .feature-card2 h3 {
-  color: #ffffff !important;
+  color: #f8fafc !important;
 }
 
 body.dark-theme .how-it-works-grid .feature-card-1 p,
 body.dark-theme .how-it-works-grid .feature-card1 p,
 body.dark-theme .how-it-works-grid .feature-card2 p {
-  color: var(--text-muted) !important;
+  color: #cbd5e1 !important;
 }
 
 body.dark-theme .how-it-works-grid .feature-card-1:hover {
@@ -1237,11 +1242,11 @@ body.dark-theme .pricing-card:hover * {
 }
 
 /* ========================================
-   LARGE TABLETS (1024px and below)
+   15. RESPONSIVE DESIGN
    ======================================== */
 
+/* Large Tablets (1024px and below) */
 @media (max-width: 1024px) {
-  /* Typography adjustments */
   h1 {
     font-size: 2.5rem !important;
   }
@@ -1250,7 +1255,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 2rem !important;
   }
 
-  /* Hero section */
   .hero {
     padding: 40px 5%;
     gap: 30px;
@@ -1260,7 +1264,6 @@ body.dark-theme .pricing-card:hover * {
     max-width: 55%;
   }
 
-  /* Feature cards - Start adapting */
   .cards-group {
     grid-template-columns: 1fr 1fr;
     gap: 15px;
@@ -1275,7 +1278,6 @@ body.dark-theme .pricing-card:hover * {
     min-height: 160px;
   }
 
-  /* Footer */
   .footer-content {
     gap: 20px;
   }
@@ -1285,12 +1287,8 @@ body.dark-theme .pricing-card:hover * {
   }
 }
 
-/* ========================================
-   TABLETS (900px and below)
-   ======================================== */
-
+/* Tablets (900px and below) */
 @media (max-width: 900px) {
-  /* Typography */
   h1 {
     font-size: 2.2rem !important;
   }
@@ -1299,7 +1297,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 1.8rem !important;
   }
 
-  /* Hero section */
   .hero {
     flex-direction: column;
     text-align: center;
@@ -1314,7 +1311,6 @@ body.dark-theme .pricing-card:hover * {
     max-width: 80%;
   }
 
-  /* Team members */
   .team-members {
     padding: 40px 5%;
   }
@@ -1323,13 +1319,11 @@ body.dark-theme .pricing-card:hover * {
     flex: 0 0 280px;
   }
 
-  /* How It Works */
   .how-it-works-grid {
     flex-direction: column;
     gap: 15px;
   }
 
-  /* Pricing */
   .pricing-grid {
     flex-direction: column;
     align-items: center;
@@ -1345,23 +1339,17 @@ body.dark-theme .pricing-card:hover * {
     transform: scale(1);
   }
 
-  /* Testimonials */
   .testimonial-card {
     width: 350px;
   }
 
-  /* FAQ */
   .faq-inner {
     padding: 0 20px;
   }
 }
 
-/* ========================================
-   MOBILE LANDSCAPE / SMALL TABLETS (768px and below)
-   ======================================== */
-
+/* Mobile Landscape / Small Tablets (768px and below) */
 @media (max-width: 768px) {
-  /* Navigation */
   .menu-btn {
     display: flex;
     flex-direction: column;
@@ -1422,7 +1410,6 @@ body.dark-theme .pricing-card:hover * {
     width: 100%;
   }
 
-  /* Typography */
   h1 {
     font-size: 2rem !important;
   }
@@ -1435,7 +1422,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.95rem !important;
   }
 
-  /* Hero */
   .hero {
     padding: 30px 5%;
   }
@@ -1453,7 +1439,6 @@ body.dark-theme .pricing-card:hover * {
     justify-content: center;
   }
 
-  /* Team members */
   .team-members {
     flex-direction: column;
     padding: 30px 5%;
@@ -1465,7 +1450,6 @@ body.dark-theme .pricing-card:hover * {
     text-align: center;
   }
 
-  /* Feature cards */
   .feature-container {
     padding: 0 5%;
   }
@@ -1485,7 +1469,6 @@ body.dark-theme .pricing-card:hover * {
     padding: 20px;
   }
 
-  /* How It Works */
   .feature-details {
     padding: 40px 5%;
   }
@@ -1496,17 +1479,14 @@ body.dark-theme .pricing-card:hover * {
     font-size: 1.1rem;
   }
 
-  /* Pricing */
   .pricing-card {
     max-width: 100%;
   }
 
-  /* Testimonials */
   .testimonial-card {
     width: 300px;
   }
 
-  /* Footer */
   .footer {
     padding: 40px 5% 25px;
   }
@@ -1538,14 +1518,20 @@ body.dark-theme .pricing-card:hover * {
     width: 100%;
     max-width: none;
   }
+
+  /* Dark Mode Mobile Fixes */
+  body.dark-theme .menu-btn span {
+    background-color: var(--text-main);
+  }
+
+  body.dark-theme .nav-menu {
+    background: var(--white);
+    border-top: 1px solid var(--border-gray);
+  }
 }
 
-/* ========================================
-   MOBILE PORTRAIT (600px and below)
-   ======================================== */
-
+/* Mobile Portrait (600px and below) */
 @media (max-width: 600px) {
-  /* Typography */
   h1 {
     font-size: 1.75rem !important;
   }
@@ -1558,12 +1544,10 @@ body.dark-theme .pricing-card:hover * {
     font-size: 1.1rem !important;
   }
 
-  /* Navigation */
   .navbar {
     padding: 15px 5%;
   }
 
-  /* Hero */
   .hero {
     padding: 20px 5%;
   }
@@ -1577,7 +1561,6 @@ body.dark-theme .pricing-card:hover * {
     padding: 6px 12px;
   }
 
-  /* Buttons */
   .btn-primary,
   .btn-outline,
   .btn-secondary {
@@ -1585,7 +1568,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.9rem;
   }
 
-  /* Team members */
   .team-content {
     flex: 1;
   }
@@ -1599,7 +1581,6 @@ body.dark-theme .pricing-card:hover * {
     height: 45px;
   }
 
-  /* Feature section */
   .header-text {
     padding: 0 10px;
   }
@@ -1612,7 +1593,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.9rem !important;
   }
 
-  /* Cards */
   .card-small .pill,
   .card-large .pill,
   .how-it-works-grid .pill {
@@ -1630,7 +1610,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.9rem;
   }
 
-  /* Pricing */
   .pricing-card {
     padding: 20px;
   }
@@ -1643,7 +1622,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.9rem;
   }
 
-  /* Testimonials */
   .testimonial-card {
     width: 280px;
     padding: 20px;
@@ -1662,7 +1640,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 0.8rem !important;
   }
 
-  /* FAQ */
   summary {
     font-size: 1rem;
   }
@@ -1671,7 +1648,6 @@ body.dark-theme .pricing-card:hover * {
     padding: 15px 20px;
   }
 
-  /* Footer */
   .footer {
     padding: 30px 5% 20px;
   }
@@ -1682,12 +1658,8 @@ body.dark-theme .pricing-card:hover * {
   }
 }
 
-/* ========================================
-   SMALL MOBILE (480px and below)
-   ======================================== */
-
+/* Small Mobile (480px and below) */
 @media (max-width: 480px) {
-  /* Typography */
   h1 {
     font-size: 1.5rem !important;
   }
@@ -1696,7 +1668,6 @@ body.dark-theme .pricing-card:hover * {
     font-size: 1.25rem !important;
   }
 
-  /* Hero */
   .hero-content h1 {
     font-size: 1.5rem !important;
   }
@@ -1706,26 +1677,22 @@ body.dark-theme .pricing-card:hover * {
     height: 35px;
   }
 
-  /* Buttons */
   .btn-primary,
   .btn-outline {
     padding: 10px 14px;
     font-size: 0.85rem;
   }
 
-  /* Cards */
   .card-small,
   .card-large {
     padding: 15px;
   }
 
-  /* Testimonials */
   .testimonial-card {
     width: 260px;
     padding: 15px;
   }
 
-  /* Pricing */
   .pricing-card {
     padding: 15px;
   }
@@ -1735,25 +1702,7 @@ body.dark-theme .pricing-card:hover * {
   }
 }
 
-/* ========================================
-   DARK MODE MOBILE FIXES
-   ======================================== */
-
-@media (max-width: 768px) {
-  body.dark-theme .menu-btn span {
-    background-color: var(--text-main);
-  }
-
-  body.dark-theme .nav-menu {
-    background: var(--white);
-    border-top: 1px solid var(--border-gray);
-  }
-}
-
-/* ========================================
-   LANDSCAPE ORIENTATION FIX
-   ======================================== */
-
+/* Landscape Orientation Fix */
 @media (max-height: 500px) and (orientation: landscape) {
   .hero {
     min-height: auto;
@@ -1768,51 +1717,4 @@ body.dark-theme .pricing-card:hover * {
     max-height: 80vh;
     overflow-y: auto;
   }
-}
-
-/* EDITS */
-
-/* ========================================
-   DARK MODE TEXT IMPROVEMENTS (Cards Only)
-   ======================================== */
-
-body.dark-theme .card-small p,
-body.dark-theme .card-large p,
-body.dark-theme .how-it-works-grid p {
-  color: #cbd5e1 !important; /* brighter than muted */
-}
-
-body.dark-theme .card-small h3,
-body.dark-theme .card-large h3,
-body.dark-theme .how-it-works-grid h3 {
-  color: #f8fafc !important; /* clean soft white */
-}
-
-/* ========================================
-   DARK MODE FOOTER TEXT FIX
-   ======================================== */
-
-body.dark-theme .footer-links a,
-body.dark-theme .subscribe-label,
-body.dark-theme .tagline {
-  color: #e2e8f0 !important;
-}
-
-body.dark-theme .footer-links a:hover {
-  color: var(--accent) !important;
-}
-
-/* ========================================
-   DARK MODE SCROLL BUTTON FIX
-   ======================================== */
-
-body.dark-theme #scrollTopBtn {
-  background-color: var(--accent) !important;
-  color: #0f172a !important;
-}
-
-body.dark-theme #scrollTopBtn:hover {
-  background-color: #ffffff !important;
-  color: var(--accent) !important;
-  transform: translateY(-5px);
 }
