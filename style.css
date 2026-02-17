@@ -1241,6 +1241,16 @@ body.dark-theme .pricing-card:hover * {
   color: #ffffff !important;
 }
 
+/* Dark Mode - User Badge */
+body.dark-theme .user-badge {
+  background-color: rgba(52, 211, 153, 0.15) !important;
+  color: var(--accent) !important;
+}
+
+body.dark-theme .status-dot {
+  background-color: var(--accent) !important;
+}
+
 /* ========================================
    15. RESPONSIVE DESIGN
    ======================================== */
@@ -1437,6 +1447,7 @@ body.dark-theme .pricing-card:hover * {
 
   .avatar-group {
     justify-content: center;
+    gap: 10px;
   }
 
   .team-members {
