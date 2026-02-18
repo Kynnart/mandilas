@@ -1134,7 +1134,7 @@ body.dark-theme .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 15px #0000001a;
   background: transparent !important;
-  color: var(--primary) !important;
+  color: var(--text-main) !important;
   border-bottom: 1.5px solid var(--accent) !important;
 }
 
